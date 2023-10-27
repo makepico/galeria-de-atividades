@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formulário</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="stylesheet_formulario.css">
+	<style>
+textarea {
+  resize: none;
+}
+</style>
+</head>
+<body>
+	<form name="meuform" method="post" id="formulario">
+		<div class="box">
+			<h1>Formulário de Contato :</h1>
+
+			<label>
+				<span>Nome Completo:</span>
+				<input type="text" class="input_text" name="nome" id="name">
+			</label>
+			<br>
+			<label>
+				<span>Email:</span>
+				<input type="text" class="input_text" name="email" id="email">
+			</label>
+			<br>
+			<label>
+				<span>Assunto:</span>
+				<input type="text" class="input_text" name="assunto" id="subject">
+			</label>
+			<br>
+			<label>
+				<span>Mensagem:</span>
+				<textarea class="message" name="feedback" id="feedback"></textarea><br>
+				<input type="button" class="button" value="enviar">
+				<input type="button" class="button" value="limpar">
+			</label>
+		</div>
+	</form>
+</body>
+</html>
