@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&family=Oswald&display=swap');
+
+:root {
+    --cor-primaria: #755D8B;
+    --cor-primaria-hover:#5C4571; 
+    --cor-secundaria: #fdb927;
+    --cor-secundaria-hover: #D99502;
+    --cor-terciaria: white;
+}
+
+* { /* reseta as configurações padrão de margin e padding dos browsers */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* height: 100vh; qnd mto grande (com scroll) não é bom*/
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-terciaria);
+    
+}
+
+.cabecalho__menu {
+    padding: 2% 0 0 15%;
+    display: flex;
+    gap: 40px;
+}
+
+.cabecalho__link {
+    font-family: 'Oswald', sans-serif;
+    font-size: 24px;
+    color:var(--cor-secundaria);
+    text-decoration: none;
+}
+
+.cabecalho__link:hover {
+    color:var(--cor-secundaria-hover)
+}
+
+/* classe que contém todo o corpo do texto */
+.apresentacao {
+    padding: 5% 15% 15%;
+    display:flex;
+    align-items:center;
+}
+
+/* texto destaque */
+.destaque-titulo{
+    color:var(--cor-secundaria);
+    border: 1px solid var(--cor-secundaria);
+    padding: 1px 10px;
+}
+
+.apresentacao__conteudo {
+    width: 650px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.apresentacao__titulo {
+    font-family: 'Oswald', sans-serif;
+    font-size: 34px;
+}
+
+.apresentacao__texto {
+    font-family: 'Nunito', sans-serif;
+    font-size: 22px;
+}
+
+.links__subtitulo {
+    font-family: 'Oswald', sans-serif;
+    font-size: 32px;
+}
+
+.apresentacao__links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 22px;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+
+    width:280px;
+    text-align: center;
+    border: 3px solid var(--cor-secundaria);
+    border-radius: 8px;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 15px 10px;
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    font-family: 'Nunito', sans-serif;
+
+}
+
+.links:hover {
+    /* padding: 20px;  /* ver como bloquear o resto do texto pra não subir qnd o botão aumentar */
+    background-color: var(--cor-primaria-hover);
+    transition: 0.2s;
+
+}
+
+.rodape {
+   background-color: var(--cor-secundaria);
+   color:white;
+   padding:24px;
+   text-align: center;
+   font-family: 'Nunito', sans-serif;
+   font-size:24px;
+   font-weight: 400;
+}

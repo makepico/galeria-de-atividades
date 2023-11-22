@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&family=Oswald&display=swap');
+
+:root {
+    --cor-primaria: #001e3e;
+    --cor-primaria-hover:#052D58; 
+    --cor-secundaria: #a11f30;
+    --cor-secundaria-hover: #80424A;
+    --cor-terciaria: white;
+}
+
+* { /* reseta as configurações padrão de margin e padding dos browsers */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* height: 100vh; qnd mto grande (com scroll) não é bom*/
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-terciaria);
+    
+}
+
+.cabecalho__menu {
+    padding: 2% 0 0 15%;
+    display: flex;
+    gap: 40px;
+}
+
+.cabecalho__link {
+    font-family: 'Oswald', sans-serif;
+    font-size: 24px;
+    color:var(--cor-terciaria);
+    text-decoration: none;
+}
+
+/* .cabecalho__link:hover {
+    color:var(--cor-secundaria-hover)
+} */
+
+.apresentação__jogadores {
+    display: flex;
+
+}
+
+.hoster {
+    display:flex;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+.jogadores {
+    display: flex;
+    justify-content: center;
+        flex-direction: column;
+}
+
+/* .apresentacao__jogadores {
+    display:flex;
+    border: 1px solid yellow;
+    justify-content: center;
+}
+
+.hoster {
+    display: flex;
+    justify-content: center;
+    border: 1px solid green;
+    width: 600px
+}
+
+.jogadores {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid violet;
+}
+
+.stats {
+    display: flex;
+    justify-content: center;
+} */
+
+.rodape {
+   background-color: var(--cor-secundaria);
+   color:white;
+   padding:24px;
+   text-align: center;
+   font-family: 'Nunito', sans-serif;
+   font-size:24px;
+   font-weight: 400;
+}
+
+.dropdown button {
+    background-color: #001e3e;
+    color: var(--cor-terciaria);
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Oswald', sans-serif;
+    font-size: 24px;
+}
+
+.dropdown a {
+    display: block;
+    color: var(--cor-secundaria);
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+.content {
+    background-color: var(--cor-secundaria);
+    position: absolute;
+    display: none
+}
+
+.dropdown:hover .content{
+    display: block;
+}
+
+.content a {
+    color: white;
+}
+
+.content a:hover {
+    background-color: var(--cor-secundaria-hover);
+}
