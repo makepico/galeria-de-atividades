@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Merriweather&display=swap');
+
+
+body {
+    width: 1500px;
+    margin: 0 0 0 200px;
+}
+
+.header {
+    display: flex;
+    border: 1px solid black;
+    justify-content: space-evenly;
+    background-color: mediumpurple;
+    padding: 30px;
+}
+
+.header-text {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+
+.titulo {
+    font-family: Merriweather;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.paragrafo {
+    font-family: Lato;
+    font-size: 22px;
+}
